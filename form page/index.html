@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>Login | Register</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx">
+            <div class="img-show-content">
+              <h1 style="text-align: center">Welcome back!</h1>
+              <h3 style="text-align: center">
+                To keep Connected with us please login with your personal info.
+              </h3>
+              <button class="bt" onclick="toggleForm();">LOG IN</button>
+            </div>
+          </div>
+          <div class="formBx">
+            <form>
+              <h2>Create Account</h2>
+              <input type="text" name="" placeholder="NAME" />
+              <input type="email" name="" placeholder="EMAIL" />
+              <input type="password" name="" placeholder="PASSWORD" />
+              <input type="submit" name="" value="SIGN UP" />
+              <p class="signup">
+                Don't have an account?<a href="#" onclick="toggleForm();">
+                  Sign Up.</a>
+              </p>
+              <p class="or">or</p>
+              <i
+                class="fa fa-google-plus-square"
+                style="font-size: 34px; color: red"
+              ></i>
+            </form>
+          </div>
+        </div>
+
+        <div class="user signupBx">
+          <div class="formBx">
+            <form>
+              <h2>Sign in to fill the form</h2>
+              <div class="for-icon">
+                 <i class="material-icons">perm_identity</i>
+                 <input type="text" name="" placeholder="USERNAME" />
+              </div>
+              <div class="for-icon">
+                <i class="material-icons">lock_outline</i>
+                 <input type="password" name="" placeholder="PASSWORD" />
+              </div>
+              <a class="signup-1"> Forget your Password!</a>
+              <p class="signup">
+                Forget your Password!<a href="#" onclick="toggleForm();">
+                  Sign in</a
+                >
+              </p>
+              <input type="submit" name="" value="SIGN IN" />
+
+             <p class="or">or</p>
+              <i
+                class="fa fa-google-plus-square"
+                style="font-size: 34px; color: red"
+              ></i>
+            </form>
+          </div>
+          <div class="imgBx">
+            <div class="img-show-content">
+              <h1 style="text-align: center">Hello, Friends:)</h1>
+              <h3 style="text-align: center">
+                Enter your personal details and start exploring your passion together.
+              </h3>
+              <button class="bt" onclick="toggleForm();">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      function toggleForm() {
+        var container = document.querySelector(".container");
+        container.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
